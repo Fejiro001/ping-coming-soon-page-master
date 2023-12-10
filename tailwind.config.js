@@ -2,7 +2,20 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'libre-franklin': ['"Libre Franklin"', 'sans- serif'],
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'primary-blue': 'hsl(223, 87%, 63%)',
+        'pale-blue': 'hsl(223, 100%, 88%)',
+        'light-red': 'hsl(354, 100%, 66%)',
+        'gray': 'hsl(0, 0%, 59%)',
+        'dark-blue': 'hsl(209, 33%, 12%)',
+      },
+    },
   },
   plugins: [],
 }
