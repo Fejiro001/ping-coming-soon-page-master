@@ -15,6 +15,10 @@ module.exports = {
         'gray': 'hsl(0, 0%, 59%)',
         'dark-blue': 'hsl(209, 33%, 12%)',
       },
+      width: {
+        '1280': '320rem',
+        '782': '195rem',
+      },
     },
   },
   plugins: [],
