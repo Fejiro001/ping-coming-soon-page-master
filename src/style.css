@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  li:hover {
+    cursor: pointer;
+    @apply bg-primary-blue;
+  }
+
+  li:hover i {
+    color: white;
+  }
+}

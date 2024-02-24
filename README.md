@@ -49,10 +49,22 @@ Users should be able to:
 
 ### What I learned
 
+This piece of code is used to verify the email an show different messages depending on the state of the input element
+
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+function verifyEmail() {
+  errorMessage.style.color = "red";
+
+  if (emailInput.validity.valueMissing) {
+    errorMessage.innerHTML =
+      "Whoops! It looks like you forgot to add your email";
+  } else if (emailInput.validity.patternMismatch) {
+    errorMessage.innerHTML = "Please provide a valid email address";
+  } else {
+    errorMessage.innerHTML = "Successfully subscribed!";
+    errorMessage.style.color = "green";
+  }
+}
 ```
 
 ### Continued development
