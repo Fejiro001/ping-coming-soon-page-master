@@ -13,16 +13,11 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="./assets/fonts/LibreFranklin-VariableFont_wght.ttf" as="font" type="font/truetype" crossorigin>
 
     <!-- STYLE -->
     <link rel="stylesheet" href="./dist/style.css" />
@@ -33,14 +28,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Frontend Mentor | Ping coming soon page</title>
+    <title>Ping coming soon page</title>
   </head>
 
-  <body class="font-libre-franklin">
+  <body class="font-primary">
     <main class="flex flex-col px-8 lg:px-48 xl:px-96 py-12 md:pb-0">
       <img
         class="self-center py-8 w-14 sm:w-24"
-        src="./images/logo.svg"
+        src="./assets/images/logo.svg"
         alt="website logo"
       />
 
@@ -85,8 +80,8 @@
       </form>
 
       <img
-        class="my-10 h-782 w-1280"
-        src="./images/illustration-dashboard.webp"
+        class="my-10 h-auto max-w-full"
+        src="./assets/images/illustration-dashboard.webp"
         alt=" an illustration of the Ping dashboard"
       />
     </main>
@@ -130,13 +125,13 @@
       <p class="text-sm font-bold text-dark-blue">
         Challenge by
         <a
-          class="text-primary-blue hover:underline"
+          class="text-primary-blue"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a
-          class="text-primary-blue hover:underline"
+          class="text-primary-blue"
           href="https://www.frontendmentor.io/profile/Fejiro001"
           >Fejiro Abere</a
         >.

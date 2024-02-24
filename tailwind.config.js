@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "libre-franklin": ['"Libre Franklin"', "sans- serif"],
+        primary: ["Libre Franklin", "sans-serif"],
       },
       colors: {
         transparent: "transparent",
@@ -23,4 +23,3 @@ module.exports = {
   },
   plugins: [],
 };
-
